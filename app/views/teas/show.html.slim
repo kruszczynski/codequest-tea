@@ -1,0 +1,11 @@
+.tea
+  .edit
+    = link_to 'edit', edit_tea_path(@tea)
+  .delete
+    = link_to 'destroy', tea_path(@tea), method: :delete
+  .all
+    = link_to 'all teas', teas_path
+  .name
+    = @tea.name
+  .description
+    = @tea.description

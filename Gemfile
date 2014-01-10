@@ -6,6 +6,7 @@ ruby '2.0.0'
 gem 'rails', '4.0.1'
 gem 'pg'
 gem 'slim-rails'
+gem 'skim'
 gem 'newrelic_rpm'
 
 group :assets do

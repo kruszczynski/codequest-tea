@@ -1,0 +1,9 @@
+h1 All teas
+ul
+  - @teas.each do |tea|
+    li
+      p
+        strong = link_to "#{tea.name} ", tea_path(tea)
+        = tea.description
+        = link_to ' edit ', edit_tea_path(tea)
+        = link_to 'destroy', tea_path(tea), method: :delete
