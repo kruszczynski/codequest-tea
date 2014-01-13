@@ -12,8 +12,11 @@ class TeasController < ApplicationController
 
   def create
     @tea = Tea.new(tea_params)
-    @tea.save
-    redirect_to @tea
+    if @tea.save
+      redirect_to @tea
+    else
+      render 'new'
+    end
   end
 
   def show
