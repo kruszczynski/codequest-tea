@@ -1,5 +1,7 @@
 class TeasController < ApplicationController
 
+  before_filter 'authorize'
+
   def index
     @teas = Tea.all
   end
