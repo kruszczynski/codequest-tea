@@ -1,5 +1,5 @@
 require 'spec_helper'
 
-describe TeasController do
+describe 'TeasController' do
 
 end
