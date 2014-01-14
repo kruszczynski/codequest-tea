@@ -78,3 +78,7 @@ CodequestTeaApp::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 end
+
+Dynopoker.configure do |config|
+  config.address = 'http://codequest-tea.herokuapp.com/'
+end

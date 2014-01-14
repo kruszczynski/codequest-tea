@@ -12,6 +12,7 @@ gem 'newrelic_rpm'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+gem 'unicorn'
 
 group :assets do
   gem 'sass-rails', '~> 4.0.0'
@@ -37,6 +38,7 @@ end
 
 group :production do
   gem 'rails_12factor'
+  gem 'dynopoker'
 end
 
 group :doc do
