@@ -30,10 +30,8 @@ group :test do
   gem 'test-unit'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
-end
-
-group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'shoulda-matchers'
 end
 
 group :production do
