@@ -26,11 +26,15 @@ group :development do
   gem 'hirb'
 end
 
+group :development, :test do
+  gem 'cucumber-rails', :require => false
+  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'factory_girl_rails'
+end
+
 group :test do
   gem 'test-unit'
-  gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
-  gem 'rspec-rails', '~> 3.0.0.beta'
   gem 'shoulda-matchers'
 end
 
